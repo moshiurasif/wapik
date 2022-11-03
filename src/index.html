@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wapik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+    <!-- header section start -->
+    <header
+        class="bg-[url('../images/Home.jpg')] md:h-screen h-auto w-full bg-no-repeat bg-cover bg-center bg-[#296365] bg-blend-multiply">
+        <nav class="p-5 border-l-slate-300 md:flex md:items-center md:justify-between text-white md:px-20">
+            <div class="flex justify-between items-center">
+                <!-- logo -->
+                <span class="text-2xl font-montserrat cursor-pointer uppercase font-black">wapik</span>
+
+                <span class="mx-4 text-2xl pb-1.5 md:block hidden text-gray-400">|</span>
+
+                <a href="tel:+625 425 888 20" class=" hidden md:flex md:items-center space-x-1">
+                    <ion-icon class="" name="call-outline"></ion-icon> <span>
+                        +625 425 888 20
+                    </span>
+                </a>
+
+                <!-- mobile menu icon -->
+                <span class="text-3xl cursor-pointer md:hidden block mx-2">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <!-- navbar section -->
+            <ul
+                class="md:flex md:items-center md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0
+                pl-7 md:opacity-100 opacity-100 top-[-400px] transition-all ease-in duration-500 bg-[#296365] md:bg-transparent">
+                <li class="mx-4 my-6 md:my-0"><a class="text-lg uppercase active:text-white" href="#">Home</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0"><a class="text-lg uppercase text-slate-300 hover:text-white duration-500"
+                        href="#">About Us</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0"><a class="text-lg uppercase text-slate-300 hover:text-white duration-500"
+                        href="#">Pricing</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0"><a class="text-lg uppercase text-slate-300 hover:text-white duration-500"
+                        href="#">Contact
+                        Us</a>
+                </li>
+                <button class="bg-[#6b7f7f] text-white font-montserrat px-6 py-2 ml-4 hover:bg-[#6fb048] duration-500
+                    rounded uppercase">Get
+                    Started
+                </button>
+            </ul>
+        </nav>
+        <hr class="w-[87%] mx-auto opacity-20">
+        <!-- hero section start -->
+        <div class="md:px-20 px-5 md:w-[50%] md:absolute top-[30%] text-center md:text-left py-10 text-white">
+            <h1 class="text-3xl md:text-4xl font-bold my-4">Welcome to Wapik</h1>
+            <p class="text-base md:text-lg my-4 ">Wapik is multipurpose template, with modern and smart design. Wapik is
+                perfect
+                template
+                for you!</p>
+            <button class="bg-[#6fb048] hover:bg-[#6b7f7f] text-white uppercase px-8 py-2 rounded">Learn More</button>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- feature section start -->
+    <div class="py-20">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl text-[#0f5f5c]">Best of our features</h2>
+            <hr class="w-[5%] mx-auto my-3">
+            <p class="text-[#83a7a5]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        </div>
+        <div class="md:flex md:justify-around md:items-center md:px-20 px-5">
+            <div class="text-center mb-10 md:mb-0">
+                <img class="inline-block" src="../images/icon-1.png" alt="ionicons">
+                <h6 class="text-[#0f5f5c] my-3">Ionicons</h6>
+                <p class="text-[#83a7a5]">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean
+                    eu leo quam.
+                    Pellentesque ornare sem.</p>
+            </div>
+            <div class="text-center mb-10 md:mb-0">
+                <img class="inline-block" src="../images/icon-2.png" alt="ionicons">
+                <h6 class="text-[#0f5f5c] my-3">Creative Design</h6>
+                <p class="text-[#83a7a5]">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean
+                    eu leo quam.
+                    Pellentesque ornare sem.</p>
+            </div>
+            <div class="text-center mb-10 md:mb-0">
+                <img class="inline-block" src="../images/iocn-3.png" alt="ionicons">
+                <h6 class="text-[#0f5f5c] my-3">Photoshop and Sketch</h6>
+                <p class="text-[#83a7a5]">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean
+                    eu leo quam.
+                    Pellentesque ornare sem.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="grid gap-y-12 md:grid-cols-2 md:gap-x-4  md:px-20 px-5 mx-auto md:py-20 py-10">
+        <div>
+            <div class="flex items-center space-x-3 mb-6">
+                <img src="../images/icon01.png" alt="">
+                <h6 class="text-[#0f5f5c]">Cross Browser Compatibility</h6>
+            </div>
+            <p class="text-[#83a7a5]">Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi
+                porta
+                gravida at eget metus.</p>
+        </div>
+        <div>
+            <div class="flex items-center space-x-3 mb-4">
+                <img src="../images/creative.png" alt="">
+                <h6 class="text-[#0f5f5c]">Creatice Idea</h6>
+            </div>
+            <p class="text-[#83a7a5]">Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi
+                porta
+                gravida at eget metus.</p>
+        </div>
+        <div>
+            <div class="flex items-center space-x-3 mb-5">
+                <img src="../images/pixel.png" alt="">
+                <h6 class="text-[#0f5f5c]">Pixel Perfect</h6>
+            </div>
+            <p class="text-[#83a7a5]">Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi
+                porta
+                gravida at eget metus.</p>
+        </div>
+        <div>
+            <div class="flex items-center space-x-3 mb-4">
+                <img src="../images/free.png" alt="">
+                <h6 class="text-[#0f5f5c]">Free Forever and Ever</h6>
+            </div>
+            <p class="text-[#83a7a5]">Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi
+                porta
+                gravida at eget metus.</p>
+        </div>
+
+    </div>
+
+    <!-- feature section end -->
+
+    <!-- template section start -->
+    <div class="py-20 bg-[#eef1ec] md:h-[640px] overflow-hidden px-5 md:px-20">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl text-[#0f5f5c]">Looking for the perfect template to use?</h2>
+            <hr class="w-[5%] mx-auto my-3">
+            <p class="text-[#83a7a5]">Donec id elit non mi porta gravida at eget metus.</p>
+        </div>
+        <div class="md:grid md:gap-4 md:grid-cols-2 md:justify-items-center">
+            <div class="md:w-[75%]">
+                <img src="../images/hand-iphone.png" alt="">
+            </div>
+            <div class="mt-10">
+                <h2 class="text-3xl text-[#0f5f5c]">Responsive Ready</h2>
+                <p class="text-[#83a7a5] my-3">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                    ut
+                    fermentum massa justo sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius
+                    blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper.</p>
+                <div class="flex items-center space-x-3 my-3">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- template section end -->
+
+    <!-- review section start -->
+
+    <div class="md:flex md:items-center md:justify-between mx-auto py-20 bg-[#ffffff] md:px-20">
+
+        <div class="md:pr-40 px-5 text-center md:text-left mb-5 md:mb-0">
+            <p class="text-[#83a7a5] my-3 text-[22px]">This theme is beautiful, elegant and easy to customize. I’ve
+                been able to
+                build an amazing site in just a minute. Thank you very much for creating this impressive template!
+
+            </p>
+            <p class="text-[#7FB85E]">Valiria Voltneva</p>
+            <p class="text-[#83a7a5]">Director of Acme.Inc</p>
+        </div>
+        <div class="md:w-[75%] p-5 text-center">
+            <img class="inline-block" src="../images/face.png" alt="">
+        </div>
+    </div>
+
+    <!-- review section end -->
+    <!-- map section start -->
+
+    <div
+        class="md:flex md:items-center md:justify-between space-x-20 mx-auto md:justify-items-center py-20 bg-[#eef1ec] md:px-20">
+
+        <div class="px-5 md:w-[60%]">
+            <h2 class="text-3xl text-[#0f5f5c] mb-2">Built with High Attention to Details</h2>
+            <p class="text-[#83a7a5]">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                fermentum massa justo sit
+                amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum
+                nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id
+                ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                Donec id elit non mi porta gravida at eget metus.</p>
+        </div>
+        <div class="md:w-[40%]">
+            <img src="../images/map.png" alt="">
+        </div>
+    </div>
+
+    <!-- map section end -->
+
+    <!-- Pricing section start -->
+    <div class="py-20">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl text-[#0f5f5c]">Pricing & Plan</h2>
+            <hr class="w-[5%] mx-auto my-3">
+            <p class="text-[#83a7a5]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        </div>
+        <div class="md:grid md:gap-4 md:grid-cols-3 md:mx-auto md:w-[60%] px-5 md:px-0">
+            <div class="text-center mb-10 md:mb-0 border border-[#c1d3d2] p-5">
+                <p class="text-[#6fb048] uppercase mb-3">Basic</p>
+                <p class="text-[#0f5f5c] text-4xl font-bold">$199</p>
+                <p class="text-[#0f5f5c] mb-3">/month</p>
+                <p class="text-[#83a7a5] mb-3">Justo Fringilla</p>
+                <p class="text-[#83a7a5] mb-3">Mollis Sit Nullam</p>
+                <p class="text-[#83a7a5] mb-3">Ultricies Purus Amet</p>
+                <p class="text-[#83a7a5] mb-3">Cras Inceptos</p>
+                <button class="bg-[#6b7f7f] text-white font-montserrat px-6 py-2 hover:bg-[#6fb048] duration-500
+                    rounded uppercase text-center">
+                    Select Plan
+                </button>
+            </div>
+            <div class="text-center mb-10 md:mb-0 border border-[#c1d3d2] p-5">
+                <p class="text-[#6fb048] uppercase mb-3">Plus</p>
+                <p class="text-[#0f5f5c] text-4xl font-bold">$399</p>
+                <p class="text-[#0f5f5c] mb-3">/month</p>
+                <p class="text-[#83a7a5] mb-3">Justo Fringilla</p>
+                <p class="text-[#83a7a5] mb-3">Mollis Sit Nullam</p>
+                <p class="text-[#83a7a5] mb-3">Ultricies Purus Amet</p>
+                <p class="text-[#83a7a5] mb-3">Cras Inceptos</p>
+                <button class="bg-[#6b7f7f] text-white font-montserrat px-6 py-2 hover:bg-[#6fb048] duration-500
+                    rounded uppercase text-center">
+                    Select Plan
+                </button>
+            </div>
+            <div class="text-center mb-10 md:mb-0 border border-[#c1d3d2] p-5">
+                <p class="text-[#6fb048] uppercase mb-3">Premium</p>
+                <p class="text-[#0f5f5c] text-4xl font-bold">$699</p>
+                <p class="text-[#0f5f5c] mb-3">/month</p>
+                <p class="text-[#83a7a5] mb-3">Justo Fringilla</p>
+                <p class="text-[#83a7a5] mb-3">Mollis Sit Nullam</p>
+                <p class="text-[#83a7a5] mb-3">Ultricies Purus Amet</p>
+                <p class="text-[#83a7a5] mb-3">Cras Inceptos</p>
+                <button class="bg-[#6b7f7f] text-white font-montserrat px-6 py-2 hover:bg-[#6fb048] duration-500
+                    rounded uppercase text-center">
+                    Select Plan
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Pricing section end -->
+
+    <!-- Plan section start -->
+    <div class="py-20 md:px-20 px-5">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl text-[#0f5f5c]">Included with all Plans</h2>
+            <hr class="w-[5%] mx-auto my-3">
+        </div>
+        <div class="md:flex md:justify-around md:items-center">
+            <div class="mb-10 md:mb-0">
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Maecenas faucibus mollis interdum
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Maecenas faucibus mollis interdum
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Maecenas faucibus mollis interdum
+                    </p>
+                </div>
+            </div>
+            <div class="mb-10 md:mb-0">
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Maecenas faucibus mollis interdum
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Maecenas faucibus mollis interdum
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Maecenas faucibus mollis interdum
+                    </p>
+                </div>
+            </div>
+            <div class="mb-10 md:mb-0">
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Maecenas faucibus mollis interdum
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Maecenas faucibus mollis interdum
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="../images/tik.png" alt="">
+                    <p class="text-[#83a7a5]">Maecenas faucibus mollis interdum
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- plan section end -->
+
+    <!-- help section start -->
+    <div class="text-center mb-20 px-5 md:px-20">
+        <img class="inline-block mb-5" src="../images/help.png" alt="">
+        <h2 class="text-3xl text-[#6fb048]">Need Help?</h2>
+        <hr class="w-[5%] mx-auto my-3 bg-[#6fb048] py-[0.1px]">
+        <p class="text-[#83a7a5] mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        <a class="text-[#0f5f5c] text-[18px]" href="#">support@wapik.com</a>
+    </div>
+    <!-- help section end -->
+
+    <!-- download section start -->
+
+    <div
+        class="md:flex md:items-center md:justify-around py-20 md:px-20 px-5 bg-[url('../images/bannerjpg.jpg')] text-center md:text-left">
+
+        <div class="md:w-[50%]">
+            <h2 class="text-3xl text-[#0f5f5c] mb-2">Built with High Attention to Details</h2>
+            <p class="text-[#83a7a5] mb-5 md:mb-0">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                vestibulum.</p>
+        </div>
+        <div class="">
+            <button class="bg-[#6fb048] text-white font-montserrat px-6 py-2 hover:bg-[#6b7f7f] duration-500
+                    rounded uppercase text-center md:text-base text-xs">
+                download now! - FREE forever
+            </button>
+        </div>
+    </div>
+
+    <!-- download section end -->
+    <!-- footer section start -->
+    <div class="md:flex md:justify-between md:py-20 py-10 md:text-left text-center md:px-20 px-5">
+        <div class="md:mb-0 mb-5">
+            <div class="text-[22px] text-[#0f5f5c] uppercase font-bold">wapik</div>
+            <p class="text-[#83a7a5] mb-2">@: <span class="text-[#0f5f5c]">hi@wapik.com</span></p>
+            <p class="text-[#83a7a5] mb-2">p: +62 202 555 0117</p>
+            <p class="text-[#83a7a5] mb-2">a: 610 Overlook Circle Suite 323</p>
+            <p class="text-[#83a7a5] mb-2">Kalamazoo, MI 49009</p>
+        </div>
+        <div class="md:mb-0 mb-5">
+            <div class="text-[#0f5f5c] font-bold mb-2">Company</div>
+            <p class="text-[#83a7a5] mb-2">Home</p>
+            <p class="text-[#83a7a5] mb-2">About Us</p>
+            <p class="text-[#83a7a5] mb-2">Pricing</p>
+            <p class="text-[#83a7a5] mb-2">Contact Us</p>
+        </div>
+        <div class="md:mb-0 mb-5">
+            <div class="text-[#0f5f5c] font-bold mb-2">Others</div>
+            <p class="text-[#83a7a5] mb-2">Help & Support</p>
+            <p class="text-[#83a7a5] mb-2">Privacy Policy</p>
+            <p class="text-[#83a7a5] mb-2">Terms</p>
+            <p class="text-[#83a7a5] mb-2">Sitemap</p>
+        </div>
+        <div>
+            <div class="text-[#0f5f5c] font-bold mb-2">Newsletter</div>
+            <p class="text-[#83a7a5] mb-5 px-5 md:px-0">Subscribe to our newsletter and get all
+                the cool news</p>
+            <div class="bg-[#eef1ec] py-2 px-4 md:w-[65%] w-[100%] mx-auto md:mx-0 mb-2 rounded">
+                <input class="bg-[#eef1ec] focus:outline-none" type="email" name="email" id="email"
+                    placeholder="Enter Email">
+                <img class="inline cursor-pointer" src="../images/submit.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="md:flex md:justify-between py-5 md:items-center md:px-20 px-5 space-y-5 md:space-y-0 text-center">
+        <div>
+            <p class="text-[#83a7a5]">&copy; All rights reserved 2015.</p>
+        </div>
+        <div>
+            <ion-icon class="text-white rounded-full p-2 bg-[#55acee]" name="logo-twitter"></ion-icon>
+            <ion-icon class="text-white rounded-full p-2 bg-[#3b5998]" name="logo-facebook"></ion-icon>
+            <ion-icon class="text-white rounded-full p-2 bg-[#3f729b]" name="logo-instagram"></ion-icon>
+            <ion-icon class="text-white rounded-full p-2 bg-[#ea4c89]" name="logo-dribbble"></ion-icon>
+            <ion-icon class="text-white rounded-full p-2 bg-[#333333]" name="logo-github"></ion-icon>
+        </div>
+    </div>
+    <!-- footer section end -->
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector("ul");
+            e.name === "menu-outline" ? (e.name = "close-outline",
+                list.classList.add('top-[76px]'), list.classList.add('opacity-100')) : (e.name = "menu-outline",
+                list.classList.remove('top-[76px]'), list.classList.remove('opacity-100'));
+        }
+    </script>
+</body>
+
+</html>
